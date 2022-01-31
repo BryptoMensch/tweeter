@@ -1,0 +1,25 @@
+nav {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	height: 100px;
+	width: max-width;
+	background-color: #4056a1;
+}
+
+nav > span {
+	font-family: "Bungee", sans-serif;
+	color: #ffffff;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	padding-bottom: 0.75em;
+	font-size: 1.2em;
+}
+
+nav > i {
+	color: #ffffff;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	padding-bottom: 0.75em;
+	font-size: 1.2em;
+}
