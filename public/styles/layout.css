@@ -17,10 +17,31 @@ html {
  */
 
 body {
+	height: 100%;
+	width: 100%;
 	color: #545149;
 	background-color: #f4f1ec;
 	font-family: "Source Sans Pro", Sans-Serif;
 	font-size: 24px;
+}
+
+/* main {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	background-color: #9b6816;
+	width: 90%;
+} */
+
+.container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 0 auto;
+	width: 90%;
+	background-color: #f4f1ec;
 }
 
 /*
