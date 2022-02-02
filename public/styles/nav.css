@@ -2,12 +2,14 @@ nav {
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
-	height: 100px;
+	/* height: 100px; */
 	width: 100%;
-	background-color: #a2b99b;
+	/* background-color: #a2b99b; */
 	padding-left: 1.5em;
 	padding-right: 1.5em;
-	position: relative;
+	position: sticky;
+	top: 0;
+	background-color: #f4f1ec;
 }
 
 nav > span {
@@ -25,4 +27,10 @@ nav > span {
 p {
 	display: flex;
 	font-family: "Source Sans Pro", sans-serif;
+} */
+
+/* .navbar {
+	position: sticky;
+	top: 0;
+	background-color: transparent;
 } */
