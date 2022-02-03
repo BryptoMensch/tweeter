@@ -19,8 +19,8 @@ html {
 body {
 	height: 100%;
 	width: 100%;
-	color: #545149;
-	background-color: #f4f1ec;
+	color: #c77282;
+	background-color: #fef6f3;
 	font-family: "Source Sans Pro", Sans-Serif;
 	font-size: 24px;
 }
@@ -29,73 +29,65 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-.container {
+.main-container {
 	display: flex;
 	flex-direction: column;
-	/* text-align: center; */
+	justify-content: center;
+	/* align-items: stretch; */
 	margin: 0 auto;
 	width: 90%;
-	background-color: #f4f1ec;
+	background-color: #fef4f0;
 }
 
-.tweets {
-	/*   display: flex; */
-	width: 90%;
-	height: fit-content;
-	background-color: #f4f1ec;
-	border: solid black;
-	font-family: "Source Sans Pro", sans-serif;
-	margin: 100px auto 0 auto;
-	padding: 0.75em;
+.tweet-container {
+	border: 5px solid #c77282;
+	border-radius: 25px;
+	margin-block: 2.5em;
+	padding: 1.5em;
 }
 
-.tweets-header {
+.tweet-container:hover {
+	box-shadow: 10px -10px #e9d0fd;
+}
+
+.user-attributes {
 	display: flex;
-	height: fit-content;
-	flex-direction: row;
-	/* justify-content: space-between; */
-	background-color: #f4f1ec;
+	justify-content: space-between;
 }
 
-.tweets:hover {
-	box-shadow: 3px 3px 3px grey;
-}
-
-.tweet-text {
-	border-bottom: 5px solid black;
-	background-color: #f4f1ec;
-	font-family: "Source Sans Pro", sans-serif;
-	font-weight: 600;
-}
-
-i.far.fa-smile {
+.user-id {
 	display: flex;
-	justify-content: left;
-	font-size: 40px;
-	margin-right: 10px;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
-#username {
-	display: flex;
-	justify-content: right;
+#avatar {
+	padding: 0.5em;
 }
 
-/* footer */
-
-footer.tweets-footer {
-	/* display: flex;
-	justify-content: last baseline; */
-	/* position: relative; */
-	text-align: right;
-	margin: 10px auto 0 auto;
-}
-
-i {
-	/* position: absolute; */
+.tweet-content {
 	text-align: left;
-	color: rgb(146, 135, 135);
+	border-bottom: 5px solid #c77282;
 }
 
-i:hover {
-	color: orange;
+.below-tweet {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.25em;
+}
+
+date {
+	font-size: 12pt;
+}
+
+#flag,
+#retweet,
+#heart {
+	color: #c77282;
+}
+
+#flag:hover,
+#retweet:hover,
+#heart:hover {
+	color: rgb(255, 123, 0);
 }

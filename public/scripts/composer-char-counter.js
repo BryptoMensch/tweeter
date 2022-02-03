@@ -6,6 +6,6 @@ $(document).ready(function () {
 		if (length < 0) {
 			$(".counter").css("color", "red");
 		}
-		return $("#character-count").text(length);
+		return $("output").text(length);
 	});
 });
