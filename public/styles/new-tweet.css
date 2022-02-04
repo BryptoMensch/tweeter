@@ -13,6 +13,10 @@
 	font-weight: 600;
 }
 
+#tweet-text:focus {
+	outline: none;
+}
+
 .compose-tweet-icons {
 	display: flex;
 	justify-content: space-between;
@@ -22,8 +26,16 @@
 	padding: 0;
 	font-family: "Bungee", sans-serif;
 	color: #c77282;
-	border: none;
+	border: 5px solid #c77282;
+	border-radius: 25px;
 	background-color: #fef6f3;
+	padding: 0.4em;
+	margin: 0.2em;
+	cursor: pointer;
+}
+
+#tweet-button:hover {
+	box-shadow: 4px -4px #e9d0fd;
 }
 
 output {

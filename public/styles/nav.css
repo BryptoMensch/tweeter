@@ -1,19 +1,19 @@
 nav {
-	height: 120px;
+	height: 14vh;
 	background: linear-gradient(#fbc0aa, #fef4f0);
 	display: flex;
-	padding: 0 1.5em;
+	padding: 0 2em;
 	justify-content: space-between;
 	align-items: center;
-	position: fixed;
+	position: sticky;
 	top: 0;
-	width: 100%;
+	/* width: 100%; */
 	opacity: 0.8;
 }
 
 #nav-logo {
 	font-family: "Bungee", sans-serif;
-	font-size: 30px;
+	font-size: 1.25em;
 	color: #c77282;
 	display: flex;
 	justify-content: center;
@@ -44,7 +44,7 @@ nav {
 
 #nav-write-tweet {
 	color: #c77282;
-	font-size: 28px;
+	font-size: 1.5em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -63,5 +63,11 @@ nav {
 	}
 	100% {
 		color: #c77282;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	nav {
+		background: linear-gradient(#fbc0aa, #fef4f0);
+		opacity: 0.8;
 	}
 }

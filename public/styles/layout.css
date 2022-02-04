@@ -84,10 +84,24 @@ date {
 #retweet,
 #heart {
 	color: #c77282;
+	cursor: pointer;
 }
 
 #flag:hover,
 #retweet:hover,
 #heart:hover {
 	color: rgb(255, 123, 0);
+}
+
+@media only screen and (min-width: 1024px) {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main-container {
+		width: 55vw;
+		margin-top: 7.5vh;
+		margin-left: 29vw;
+	}
 }
