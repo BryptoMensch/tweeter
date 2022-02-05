@@ -6,11 +6,16 @@
 
 #tweet-text {
 	width: 100%;
+	height: 7vh;
 	border: none;
 	border-bottom: 5px solid #c77282;
+	color: #c77282;
 	background-color: #fef6f3;
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 600;
+	overflow-wrap: anywhere;
+	overflow: hidden;
+	resize: none;
 }
 
 #tweet-text:focus {
@@ -41,4 +46,27 @@
 output {
 	font-family: "Bungee", sans-serif;
 	color: #c77282;
+}
+
+.error-message {
+	display: none;
+	color: red;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: bold;
+	text-align: center;
+	align-self: center;
+	border: solid red;
+	width: 100%;
+	/* display: flex; */
+	/* justify-content: space-around; */
+	align-items: center;
+	margin-bottom: 0.2rem;
+}
+
+#tweet {
+	overflow-wrap: anywhere;
+}
+
+.tweet-content {
+	overflow-wrap: anywhere;
 }

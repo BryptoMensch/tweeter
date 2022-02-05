@@ -19,13 +19,9 @@
   "devDependencies": {
     "nodemon": "^1.19.4"
   },
-
-  
-    "typeAcquisition": {
-        "include": [
-            "jquery"
-        ]
-    }
-
-
+  "typeAcquisition": {
+    "include": [
+      "jquery"
+    ]
+  }
 }
