@@ -19,7 +19,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 
 ![tweeter-desktop](https://github.com/BryptoMensch/tweeter/blob/master/Docs/tweeter-desktop.png)
-![tweeter-tablet](https://github.com/BryptoMensch/tweeter/blob/master/Docs/tweeter-tablet.png
+![tweeter-tablet](https://github.com/BryptoMensch/tweeter/blob/master/Docs/tweeter-tablet.png)
 ![tweeter-desktop](https://github.com/BryptoMensch/tweeter/blob/master/Docs/tweeter-mobile.png)
 
 
