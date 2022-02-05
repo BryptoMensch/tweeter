@@ -1,7 +1,7 @@
 .new-tweet {
 	border: 5px solid #c77282;
 	border-radius: 25px;
-	padding: 1.5em;
+	padding: 1.75em;
 }
 
 #tweet-text {
@@ -16,6 +16,10 @@
 	overflow-wrap: anywhere;
 	overflow: hidden;
 	resize: none;
+}
+
+#small-avatar {
+	margin-bottom: 0.55em;
 }
 
 #tweet-text:focus {
