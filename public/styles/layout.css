@@ -5,6 +5,7 @@
  */
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -23,6 +24,7 @@ body {
 	background-color: #fef6f3;
 	font-family: "Source Sans Pro", Sans-Serif;
 	font-size: 24px;
+	word-wrap: break-word;
 }
 
 /*
@@ -33,7 +35,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/* align-items: stretch; */
+	word-wrap: break-word;
 	margin: 0 auto;
 	width: 90%;
 	background-color: #fef4f0;
@@ -44,6 +46,7 @@ body {
 	border-radius: 25px;
 	margin-block: 2.5em;
 	padding: 1.5em;
+	word-wrap: break-word;
 }
 
 .tweet-container:hover {
@@ -53,12 +56,24 @@ body {
 .user-attributes {
 	display: flex;
 	justify-content: space-between;
+	word-wrap: break-word;
 }
 
 .user-id {
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
+	word-wrap: break-word;
+}
+
+#handle {
+	display: inline-block;
+	word-wrap: break-word;
+}
+
+#name {
+	display: inline-block;
+	word-wrap: break-word;
 }
 
 #avatar {
@@ -71,7 +86,6 @@ body {
 }
 
 .error-message {
-	display: none;
 	background-color: #fce4e4;
 	border: 1px solid #fcc2c3;
 	float: left;

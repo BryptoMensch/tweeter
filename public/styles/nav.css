@@ -7,19 +7,18 @@ nav {
 	align-items: center;
 	position: sticky;
 	top: 0;
-	/* width: 100%; */
+	width: 100%;
 	opacity: 0.8;
 }
 
 #nav-logo {
 	font-family: "Bungee", sans-serif;
-	font-size: 1.25em;
+	font-size: 1.3em;
 	color: #c77282;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	opacity: 1;
-	/* margin: 1.5em; */
 	animation: pulse 8s infinite;
 }
 
@@ -31,16 +30,11 @@ nav {
 		color: #f87069;
 	}
 	66% {
-		color: #d499fc;
+		color: #29bdf8;
 	}
 	100% {
 		color: #c77282;
 	}
-}
-
-#nav-cta {
-	margin: 2px;
-	padding-top: 22px;
 }
 
 #nav-favicon {

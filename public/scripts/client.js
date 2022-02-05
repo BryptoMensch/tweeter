@@ -1,3 +1,4 @@
+// Creates framework to append new tweets to using jQuery and syntax literals.
 $(document).ready(function () {
 	const createTweetElement = function (tweet) {
 		const layout = `
@@ -21,7 +22,6 @@ $(document).ready(function () {
 						<i id="retweet" class="fas fa-retweet"></i>
 						<i id="heart" class="fas fa-heart"></i>
 					</div>
-
 				</div>
 			</div>
 			</div>
@@ -31,66 +31,52 @@ $(document).ready(function () {
 		return layout;
 	};
 
+	// Renders news tweets, appends them to above framework.
 	const renderTweets = function (tweets) {
 		for (tweeter of tweets) {
 			$("#tweeter-container").prepend(createTweetElement(tweeter));
 		}
 	};
 
-	// $(".error-message").hide();
-
+	// Submits form with jQuery.
 	$("form").on("submit", (evt) => {
 		evt.preventDefault();
 
+		//Validates tweets using two conditionals.
 		const errorMsg = $(".error-message");
 		const counterError = $(".counter");
 
+		//Returns error message if there is nothing in form field.
 		if (counterError.val() >= 140) {
 			errorMsg.text("Your message should contain text.");
 			errorMsg.fadeIn(1000).delay(1000).fadeOut(1000);
 			$("form").trigger("reset");
 		}
+
+		// Returns error message if tweet is over character limit.
 		if (counterError.val() <= 0) {
-			// $(".counter").trigger("reset");
 			errorMsg.text("Your message has too many characters.");
 			errorMsg.fadeIn("slow").delay(2000).fadeOut("slow");
 
+			// Resets counter accordingly
 			$(".counter").get(0).reset();
 		}
-		const param = $("#tweet-text").serialize();
 
+		// POST handler.
+		const param = $("#tweet-text").serialize();
 		$.post("/tweets", param).then(() => {
 			loadTweets();
 		});
 		$("form").trigger("reset");
 		$(".counter").text(140);
 	});
+
+	// GET handler.
 	const loadTweets = function () {
 		$.get("/tweets").then((tweet) => {
 			console.log(tweet);
 			renderTweets(tweet);
 		});
 	};
-
 	loadTweets();
 });
-
-// Left to do
-// 1. Error Handling
-// 2. Warning error VM1009
-
-// $(".error-message").hide("slow");
-// const input = $("#tweet-text").val();
-// //
-
-// if (input === "") {
-// 	$(".error-message").text("Tweets cannot be empty.").show("slow");
-// } else if (input.length > 140) {
-// 	$(".error-message").text("Tweets cannot be empty.").show("slow");
-
-// //
-// .then($("form", "counter").trigger("reset"));
-
-// //
-// $(".error-message").hide();
-// $(".new-tweet").hide();
