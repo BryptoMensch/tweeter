@@ -33,6 +33,7 @@ $(document).ready(function () {
 
 	// Renders news tweets, appends them to above framework.
 	const renderTweets = function (tweets) {
+		$("#tweeter-container").empty();
 		for (tweeter of tweets) {
 			$("#tweeter-container").prepend(createTweetElement(tweeter));
 		}
@@ -47,14 +48,14 @@ $(document).ready(function () {
 		const counterError = $(".counter");
 
 		//Returns error message if there is nothing in form field.
-		if (counterError.val() >= 140) {
+		if (counterError.val() > 140) {
 			errorMsg.text("Your message should contain text.");
 			errorMsg.fadeIn(1000).delay(1000).fadeOut(1000);
 			$("form").trigger("reset");
 		}
 
 		// Returns error message if tweet is over character limit.
-		if (counterError.val() <= 0) {
+		if (counterError.val() < 0) {
 			errorMsg.text("Your message has too many characters.");
 			errorMsg.fadeIn("slow").delay(2000).fadeOut("slow");
 

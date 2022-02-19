@@ -61,8 +61,6 @@ output {
 	align-self: center;
 	border: solid red;
 	width: 100%;
-	/* display: flex; */
-	/* justify-content: space-around; */
 	align-items: center;
 	margin-bottom: 0.2rem;
 }
