@@ -48,7 +48,7 @@ $(document).ready(function () {
 		const counterError = $(".counter");
 
 		//Returns error message if there is nothing in form field.
-		if (counterError.val() > 140) {
+		if (counterError.val() >= 140) {
 			errorMsg.text("Your message should contain text.");
 			errorMsg.fadeIn(1000).delay(1000).fadeOut(1000);
 			$("form").trigger("reset");
